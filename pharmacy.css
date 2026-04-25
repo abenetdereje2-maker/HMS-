@@ -1,0 +1,96 @@
+/* General Page Styling */
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #f0f4f8; /* Soft medical blue-grey */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Section */
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #f0f4f8;
+    padding-bottom: 1rem;
+}
+
+.section-header h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.section-header p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pharmacy-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two inputs per row */
+    gap: 15px;
+}
+
+/* Make medicine name take full width */
+input[name="medicene_name"] {
+    grid-column: span 2;
+}
+
+/* Input Styling */
+input, select {
+    padding: 12px 15px;
+    border: 1px solid #d1d9e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+/* Label for Expiry Date */
+label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #34495e;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Submit Button */
+.btn-save {
+    grid-column: span 2;
+    background-color: #2ecc71;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-save:hover {
+    background-color: #27ae60;
+}
+
